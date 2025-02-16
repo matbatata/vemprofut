@@ -5,7 +5,7 @@ print("4.Goleiro")
 print("5.Sair")
 p = int(input("Escolha uma opção: "))
 if p == 5:
-    print("Saindo... até logo!")
+    print("Saindo")
 else:
     fis = int(input("Digite seu fisico: "))
     pas = int(input("Digite seu passe: "))
