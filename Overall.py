@@ -1,6 +1,5 @@
-while true: 
-     print("**MENU**")
-
+while True: 
+    print("**MENU**")
     fis = int(input("Digite seu fisico: "))
     pas = int(input("Digite seu passe: "))
     chu = int(input("Digite seu chute: "))
@@ -30,8 +29,8 @@ while true:
         print("Você é um goleiro com", over, "de pontuação geral")
     elif p == 5:
         print("Saindo")
-    break
- else:
+        break
+else:
     print("Posição inválida")
 
 """
