@@ -17,7 +17,13 @@ while True:
 
     p = int(input("Selecione uma opção: "))
 
-
+    #variaveis e posições
+    st = ( )
+    cm = ( )
+    cb = ( ) 
+    gk = ( ) 
+    # Preciso saber como posso passar de forma certa para media poderada
+    # Mas até final do dia posso tentar aplicar no codigo 
     
     over = 99
 
