@@ -1,18 +1,18 @@
 while True: 
     print("**MENU**")
-    fis = int(input("Digite seu fisico: "))
-    pas = int(input("Digite seu passe: "))
-    chu = int(input("Digite seu chute: "))
-    con = int(input("Digite sua condução: "))
-    vel = int(input("Digite sua velocidade: "))
+    físico = int(input("Digite seu fisico: "))
+    passe = int(input("Digite seu passe: "))
+    chute = int(input("Digite seu chute: "))
+    conducao = int(input("Digite sua condução: "))
+    velelocidade = int(input("Digite sua velocidade: "))
 
     print("---------------------------")
     print("Escolha sua posição: ")
 
-    print("1.Ataque")
-    print("2.Meio-campo")
-    print("3.Defensor")
-    print("4.Goleiro")
+    print("1.ST")
+    print("2.CM")
+    print("3.CB")
+    print("4.GK")
     print("5.Sair")
 
     p = int(input("Selecione uma opção: "))
