@@ -17,6 +17,8 @@ while True:
 
     p = int(input("Selecione uma opção: "))
 
+
+    
     over = 99
 
     if p == 1:
@@ -33,6 +35,3 @@ while True:
 else:
     print("Posição inválida")
 
-"""
-1. Só ficou faltando colocar a soma de over: https://pt.fifauteam.com/rating-do-jogador-fifa-20-ultimate-team/
-"""
