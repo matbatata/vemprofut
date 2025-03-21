@@ -25,16 +25,18 @@ while True:
     # Preciso saber como posso passar de forma certa para media poderada
     # Mas até final do dia posso tentar aplicar no codigo 
     
-    over = 99
+     pod = passe + chute + conducao + velocidade + fisico / 5 
+     div = pod / 99
+     over = 99
 
     if p == 1:
-        print("Você é um atacante com", over, "de pontuação geral")
+        print("Você é um atacante com", div, "de pontuação geral")
     elif p == 2:
-        print("Você é um meio-campista com", over, "de pontuação geral")
+        print("Você é um meio-campista com", div, "de pontuação geral")
     elif p == 3:
-        print("Você é um defensor com", over, "de pontuação geral")
+        print("Você é um defensor com", div, "de pontuação geral")
     elif p == 4:
-        print("Você é um goleiro com", over, "de pontuação geral")
+        print("Você é um goleiro com", div, "de pontuação geral")
     elif p == 5:
         print("Saindo")
         break
