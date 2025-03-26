@@ -18,11 +18,16 @@ while True:
     p = int(input("Selecione uma opção: "))
 
     #variaveis e posições
-    st = ( )
-    cm = ( )
-    cb = ( ) 
-    gk = ( ) 
-    # Preciso saber como posso passar de forma certa para media poderada
+    
+st = ( )
+ pd_st =  
+ cm = ( )
+ pd_cm =   
+cb = ( ) 
+    pd_cb =
+gk = ( ) 
+   pd_gk =
+# Preciso saber como posso passar de forma certa para media poderada
     # Mas até final do dia posso tentar aplicar no codigo 
     
      pod = passe + chute + conducao + velocidade + fisico / 5 
