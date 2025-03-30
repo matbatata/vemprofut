@@ -1,129 +1,124 @@
-while True: 
-    print("**MENU**")
-    fis = int(input("Digite seu fisico: "))
-    pas = int(input("Digite seu passe: "))
-    chu = int(input("Digite seu chute: "))
-    con = int(input("Digite sua condução: "))
-    vel = int(input("Digite sua velocidade: "))
-
-    print("---------------------------")
+while True:
+    print("\n**MENU**")
     print("Escolha sua posição: ")
-
     print("1.Ataque")
     print("2.Meio-campo")
     print("3.Defensor")
     print("4.Goleiro")
     print("5.Sair")
 
-#Meio-campista
-p_short_passing_cm = 0.15
-p_long_passing_cm = 0.13
-p_vision = 0.12
-p_ball_control_cm = 0.10
-p_drbbling_cm = 0.9
-p_reaction_cm = 0.8
-p_interceptions_cm = 0.8
-p_attack_positiong_cm = 0.8
-p_standing_tackle_cm = 0.6
-p_stamina = 0.6
-p_long_shots_cm = 0.5
-#Zagueiro
-p_standing_tackle = 0.17
-p_denfesive_awareness = 0.14
-p_interceptions = 0.13
-p_sliding_tackle = 0.10
-p_heading_zag = 0.10
-p_streagth_zag = 0.10
-p_aggression = 0.7
-p_short_passing_zag = 0.5
-p_reaction_zag = 0.5
-p_ball_control_zag = 0.4
-p_jumping = 0.4
-#Atacante
-p_finishing = 0.20
-p_attack_positiong = 0.12
-p_hending = 0.10
-p_shot_power = 0.10
-p_reaction = 0.10
-p_dribbling = 0.8
-p_ball_control = 0.8
-p_volley = 0.5
-p_long_shots = 0.5
-p_acceleration = 0.5
-p_sprint_speed = 0.4
-p_streagth = 0.3
-#Goleiro
-p_diving = 0.21
-p_handling = 0.21
-p_positioning =0.21
-p_reflexes = 0.21
-p_reactions = 0.11
-p_kicking = 0.5
+    #Meio-campista
+    p_passe_curto_cm = 0.15
+    p_passe_longo_cm = 0.13
+    p_visao = 0.12
+    p_controle_bola_cm = 0.1
+    p_drible_cm = 0.9
+    p_reacao_cm = 0.8
+    p_interceptacoes_cm = 0.8
+    p_posicionamento_ataque_cm = 0.8
+    p_tackle_cm = 0.6
+    p_resistencia = 0.6
+    p_finalizacao_longa_cm = 0.5
 
+    #Zagueiro
+    p_tackle = 0.17
+    p_consciencia_defensiva = 0.14
+    p_interceptacoes = 0.13
+    p_tackle_deslizante = 0.1
+    p_cabeca_zag = 0.1
+    p_forca_zag = 0.1
+    p_agressividade = 0.7
+    p_passe_curto_zag = 0.5
+    p_reacao_zag = 0.5
+    p_controle_bola_zag = 0.4
+    p_pulo = 0.4
 
-overall_meio_campista = p_short_passing_cm*short_passing_cm+p_long_passing_cm*long_passing_cm+p_vision*vision+p_ball_control_cm*ball_control_cm+p_drbbling_cm*drbbling_cm+p_reaction_cm*reaction_cm+p_reaction_cm*reaction_cm+p_interceptions*interceptions+p_attack_positiong_cm*attack_positiong_cm+p_standing_tackle_cm*standing_tackle_cm+p_stamina*stamina+p_long_shots_cm*long_shots_cm
-overall_zagueiro = p_standing_tackle * standing_tackle + p_denfesive_awareness*denfesive_awareness+p_interceptions*interceptions+p_sliding_tackle*sliding_tackle+p_heading_zag*heading_zag+p_streagth_zag*streagth_zag+p_aggression*aggression+p_short_passing_zag*short_passing+p_reaction_zag*reaction_zag+p_ball_control_zag*ball_control_zag+p_jumping*jumping
-overall_atacante = p_finishing*finishing + p_attack_positiong*attack_positioning + p_hending*heading + p_shot_power * shot_power + p_reaction * reaction + p_dribbling * dribbling + p_ball_control * ball_control + p_volley * volley + p_long_shots * long_shots + p_acceleration * acceleration + p_sprint_speed * sprint_speed + p_streagth * streaght
-overall_goleiro = p_diving*diving + p_handling*handling + p_positioning*positioning + p_reflexes*reflexes+p_reactions*reactions+p_kicking*kicking
+    #Atacante
+    p_finalizacao = 0.20
+    p_posicionamento = 0.12
+    p_cabeca = 0.1
+    p_poder_tiro = 0.1
+    p_reacao = 0.1
+    p_drible = 0.8
+    p_controle_bola = 0.8
+    p_bicicleta = 0.5
+    p_finalizacao_longa = 0.5
+    p_aceleracao = 0.5
+    p_velocidade = 0.4
+    p_forca = 0.3
+
+    # Goleiro
+    p_reflexos = 0.21
+    p_dominio = 0.21
+    p_posicionamento = 0.21
+    p_reflexos = 0.21
+    p_reacoes = 0.11
+    p_chute = 0.5
 
     p = int(input("Selecione uma opção: "))
 
-    over = 99
-
     if p == 1:
-        finishing = float(input("Adicione o finishing: "))
-        attack_positioning = float(input("Adicione o attack position: "))
-        heading = float(input("Adicione o heading: "))
-        shot_power = float(input("Adicione o shot power: "))
-        reaction = float(input("Adicione o reaction: "))
-        dribbling = float(input("Adicione o dribbling: "))
-        ball_control = float(input("Adicone o ball control: "))
-        volley = float(input("Adicone o volley: "))
-        long_shots = float(input("Adicone o long shot: "))
-        acceleration = float(input("Adicone o acceleration: "))
-        sprint_speed = float(input("Adicone o sprint speed: "))
-        streaght = float(input("Adicone o streaght: "))
-            print(overall_atacante)
+        #Atacante
+        finalizacao = float(input("Adicione o finalização: "))
+        posicionamento = float(input("Adicione o posicionamento: "))
+        cabeca = float(input("Adicione o cabeça: "))
+        poder_tiro = float(input("Adicione o poder tiro: "))
+        reacao = float(input("Adicione o reação: "))
+        drible = float(input("Adicione o drible: "))
+        controle_bola = float(input("Adicione o controle bola: "))
+        bicicleta = float(input("Adicione o bicicleta: "))
+        finalizacao_longa = float(input("Adicione o finalização longa: "))
+        aceleracao = float(input("Adicione o aceleracao: "))
+        velocidade = float(input("Adicione o velocidade: "))
+        forca = float(input("Adicione o forca: "))
+        overall_atacante = p_finalizacao*finalizacao + p_posicionamento*posicionamento + p_cabeca*cabeca + p_poder_tiro * poder_tiro + p_reacao * reacao + p_drible * drible + p_controle_bola * controle_bola + p_bicicleta * bicicleta + p_finalizacao_longa * finalizacao_longa + p_aceleracao * aceleracao + p_velocidade * velocidade + p_forca * forca
+        print(overall_atacante)
+
     elif p == 2:
-        short_passing_cm = float(input("Adicione o short passing: "))
-        long_passing_cm = float("Adicione o long passing: ")
-        vision = float(input("Adicione o vision"))
-        ball_control_cm = float(input("Adicione o ball control: "))
-        drbbling_cm = float(input("Adicione o dribbling: "))
-        reaction_cm = float(input("Adicione o reaction: "))
-        interceptions_cm = float(input("Adicione o interceptions: "))
-        attack_positiong_cm = float(input("Adicione o attack possitiong: "))
-        standing_tackle_cm = float(input("Adicione o standing tackle: "))
-        stamina = float(input("Adicione o stamina: "))
-        long_shots_cm = float(input("Adicione o long shots: "))
-            print(overall_meio_campista)
+        # Meio-campista
+        passe_curto_cm = float(input("Adicione o passe curto: "))
+        passe_longo_cm = float(input("Adicione o passe longo: "))
+        visao = float(input("Adicione o visao"))
+        controle_bola_cm = float(input("Adicione o controle bola: "))
+        drible_cm = float(input("Adicione o drible: "))
+        reacao_cm = float(input("Adicione o reacao: "))
+        interceptacoes_cm = float(input("Adicione o interceptacoes: "))
+        posicionamento_ataque_cm = float(input("Adicione o posicionamento ataque: "))
+        tackle_cm = float(input("Adicione o tackle: "))
+        resistencia = float(input("Adicione o resistencia: "))
+        finalizacao_longa_cm = float(input("Adicione o finalizacao longa: "))
+        overall_meio_campista = p_passe_curto_cm*passe_curto_cm+p_passe_longo_cm*passe_longo_cm+p_visao*visao+p_controle_bola_cm*controle_bola_cm+p_drible_cm*drible_cm+p_reacao_cm*reacao_cm+p_reacao_cm*reacao_cm+p_interceptacoes*interceptacoes_cm+p_posicionamento_ataque_cm*posicionamento_ataque_cm+p_tackle_cm*tackle_cm+p_resistencia*resistencia+p_finalizacao_longa_cm*finalizacao_longa_cm
+        print(overall_meio_campista)
+
     elif p == 3:
-        standing_tackle = float(input("Adicione o standing tackle: "))
-        denfesive_awareness = float(input("Adicione o defensive awareness: "))
-        interceptions = float(input("Adicione o interceptions: "))
-        sliding_tackle = float(input("Adicione o sliding tackle: "))
-        heading_zag = float(input("Adicione o heading: "))
-        streagth_zag = float(input("Adicione o streagth: "))
-        aggression = float(input("Adicione o aggression: "))
-        short_passing = float(input("Adicione o short passing: "))
-        reaction_zag = float(input("Adicione o reaction: "))
-        ball_control_zag = float(input("Adicione o ball control: "))
-        jumping = float(input("Adicione o jumping: "))
-            print(overall_zagueiro)    
+        #Zagueiro
+        tackle = float(input("Adicione o tackle: "))
+        consciencia_defensiva = float(input("Adicione o consciencia defensiva: "))
+        interceptacoes = float(input("Adicione o interceptacoes: "))
+        tackle_deslizante = float(input("Adicione o tackle deslizante: "))
+        cabeca_zag = float(input("Adicione o cabeça: "))
+        forca_zag = float(input("Adicione o forca: "))
+        agressividade = float(input("Adicione o agressividade: "))
+        passe_curto = float(input("Adicione o passe curto: "))
+        reacao_zag = float(input("Adicione o reacao: "))
+        controle_bola_zag = float(input("Adicione o controle bola: "))
+        pulo = float(input("Adicione o pulo: "))
+        overall_zagueiro = p_tackle * tackle + p_consciencia_defensiva*consciencia_defensiva+p_interceptacoes*interceptacoes+p_tackle_deslizante*tackle_deslizante+p_cabeca_zag*cabeca_zag+p_forca_zag*forca_zag+p_agressividade*agressividade+p_passe_curto_zag*passe_curto+p_reacao_zag*reacao_zag+p_controle_bola_zag*controle_bola_zag+p_pulo*pulo
+        print(overall_zagueiro)
+
     elif p == 4:
-        diving = float(input("Adicione o diving: "))
-        handling = float(input("Adicione o handling: "))
-        positioning = float(input("Adicione o positioning: "))
-        reflexes = float(input("Adicione o reflexes: "))
-        reactions = float(input("Adicione o reactions: "))
-        kicking = float(input("Adicione o kicking: "))
-            print(overall_goleiro)
+        # Goleiro
+        reflexos = float(input("Adicione o reflexos: "))
+        dominio = float(input("Adicione o dominio: "))
+        posicionamento = float(input("Adicione o posicionamento: "))
+        reflexos = float(input("Adicione o reflexos: "))
+        reacoes = float(input("Adicione o reacoes: "))
+        chute = float(input("Adicione o chute: "))
+        overall_goleiro = p_reflexos*reflexos + p_dominio*dominio + p_posicionamento*posicionamento + p_reflexos*reflexos+p_reacoes*reacoes+p_chute*chute
+        print(overall_goleiro)
+
     elif p == 5:
         print("Saindo")
         break
-else:
-    print("Posição inválida")
-
-"""
-1. Só ficou faltando colocar a soma de over: https://pt.fifauteam.com/rating-do-jogador-fifa-20-ultimate-team/
-"""
+    else:
+        print("Posição inválida")
