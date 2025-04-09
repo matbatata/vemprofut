@@ -1,3 +1,6 @@
+def limitar_valor(valor):
+    return max(1, min(99, valor))
+
 while True: 
     print("**MENU**")
     fis = int(input("Digite seu fisico: "))
