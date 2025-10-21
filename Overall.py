@@ -1,3 +1,4 @@
+#em manutenção, pois não está rodando de forma certa
 def limitar_valor(valor):
     return max(1, min(99, valor))
 
